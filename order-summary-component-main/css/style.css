@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(225, 100%, 94%) url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: auto;
+    width: 1000px;
+    background: #fff;
+    max-width: 400px;
+}
+
+.card h1 {
+    color: hsl(223, 47%, 23%);
+}
+
+.card h1,
+.card .text p {
+    text-align: center;
+    margin: 20px;
+}
+
+.card .text p {
+    padding: 10px 20px 10px;
+    color: hsl(224, 23%, 55%);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .btn-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .btn-section {
+    background: #f4f4f4;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card .btn-section .column-1 {
+    padding: 10px 20px;
+}
+
+.card .btn-section .column-2 a {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+
+.card .btn-section .column-2 p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.card .btn-section .column-2 {
+    justify-content: flex-start;
+    align-self: center;
+    font-size: 17px;
+    line-height: 1.5rem;
+    padding: 10px 10px 10px 0;
+}
+
+.card .btn-section .column-3 {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-content .payment {
+    background: hsl(245, 75%, 52%);
+    padding: 10px 20px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-content .payment a {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-content .payment:hover {
+    background: #8e75ca;
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.4);
+    font-weight: 900;
+}
+
+.btn-content .cancel {
+    margin: 0 0 40px;
+    padding: 0 20px;
+}
+
+.btn-content .cancel a {
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 17px;
+}
+
+.btn-content .cancel a:hover {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.attribution {
+    margin: 20px;
+}
